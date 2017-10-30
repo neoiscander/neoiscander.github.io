@@ -1,0 +1,62 @@
+/* Entire style */
+html {
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+
+
+/* ----- Header blocks -----*/
+
+h1 {
+  color: rgba(68, 43, 36, 1);
+  text-align: center;
+}
+
+h2 {
+  color: rgba(68, 54, 36, 1);
+}
+
+h1, h2 {
+  border: 1px solid black;
+}
+
+
+/* ----- Main -----*/
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main, .main div {
+  border: 1px solid black;
+}
+
+
+
+/* ----- Button ----- */
+
+.button { /*для материального требования */
+  background-color: rgba(219, 173, 120, 1);
+  font-size: 0.75rem;
+  color: black;
+  padding: 15px 50px;
+  text-align: center;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 { /* для нематериального требования */
+  background-color: rgba(219, 191, 120, 1);
+  }
+
+.button, .button2 {
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: rgba(219, 141, 120, 0.5);
+  }
