@@ -1,7 +1,8 @@
-/* Entire style */
+/* Global styling */
 html {
-  font-size: 30px;
+  font-size: 18px;
   font-family: "Source Sans Pro", sans-serif;
+  background-color: rgba(218, 232, 241, .5);
 }
 
 
@@ -11,10 +12,12 @@ html {
 h1 {
   color: rgba(68, 43, 36, 1);
   text-align: center;
+  font-size: 2.5rem;
 }
 
 h2 {
   color: rgba(68, 54, 36, 1);
+  font-size: 2rem;
 }
 
 h1, h2 {
@@ -31,7 +34,11 @@ h1, h2 {
   flex-direction: column;
 }
 
-.main, .main div {
+.header-for-main {
+  background-color: rgba(255, 189, 113, .3);
+}
+
+.main, .main div, .material-requirement, .non-material-requirement {
   border: 1px solid black;
 }
 
@@ -39,24 +46,44 @@ h1, h2 {
 
 /* ----- Button ----- */
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+button {
+  border: 1px solid grey;
+}
+
+
 .button { /*для материального требования */
-  background-color: rgba(219, 173, 120, 1);
-  font-size: 0.75rem;
-  color: black;
-  padding: 15px 50px;
+  background-color: rgba(170, 57, 57, .5);
+  font-size: 2rem;
+  color: rgba(255, 240, 211, 1);
   text-align: center;
-  margin: 4px 2px;
   cursor: pointer;
+  padding: 1.5rem 3rem;
+  border-radius: .5rem;
+  transition-property: all;
+  transition-duration: .6s;
+
 }
 
 .button2 { /* для нематериального требования */
-  background-color: rgba(219, 191, 120, 1);
+  margin-top: 3rem;
   }
 
-.button, .button2 {
+.button, .button2, .buttons {
   border: 1px solid black;
 }
 
 button:hover {
-  background-color: rgba(219, 141, 120, 0.5);
+  background-color: rgba(255, 222, 204, .8);
+  padding: 1.8rem 1.8rem;
+  color: rgba(63, 63, 22, 1);
+  border: 5px solid rgba(224, 216, 115, .01);
+  box-shadow: inset 3px 0px 30px rgba(88, 121, 143, .7), -.5rem 0 1px rgba(88, 121, 143, .7), .5rem 0 5px rgba(88, 121, 143, .7);
   }
